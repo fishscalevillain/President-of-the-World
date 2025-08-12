@@ -5,9 +5,13 @@ This repository contains a Solidity smart contract for a decentralized election 
 ## Features
 
 •   **Decentralized and Transparent Election:** The election process is governed by a smart contract on the Ethereum blockchain, ensuring transparency, immutability, and security.
+
 •   **Candidate Nomination:** Users can nominate a candidate by paying a nomination fee of 10 Ether.  This adds them to the pool of candidates.
+
 •   **Voting:**  Registered voters can cast their vote for their chosen candidate by sending Ether.  The amount of Ether sent contributes to the candidate's vote count.
+
 •   **Limited Voting Period:** The election has a predefined voting period set during contract deployment.
+
 •   **Winner Determination:**  The contract allows anyone to query the winner after the election period is over.
 
 ## How it Works
