@@ -16,23 +16,3 @@ This repository contains a Solidity smart contract for a decentralized election 
 2.  **Nomination:**  Users can nominate additional candidates by calling the `nominateCandidate` function and paying the nomination fee (10 Ether).  This contributes 10 Ether to the candidate's total votes.
 3.  **Voting:**  Users vote by calling the `vote` function and sending Ether. The Ether amount they send is added to the candidate's vote count. Note that only one vote is allowed per address.
 4.  **Election End:** Once the voting period has ended, anyone can call the `getWinner` function to determine the candidate with the most votes.
-
-## Smart Contract Details
-
-•   **`Election.sol`:** Contains the Solidity source code for the World Leaders Election contract.
-
-## Getting Started
-
-### Prerequisites
-
-•   **Node.js and npm:**  Make sure you have Node.js and npm (Node Package Manager) installed. You can download them from [nodejs.org](https://nodejs.org/).
-•   **Truffle or Hardhat:** This project is intended to be used with a development environment such as Truffle or Hardhat.
-    •   **Truffle:** `npm install -g truffle`
-    •   **Hardhat:** `npm install --save-dev hardhat`
-•   **Ganache or Hardhat Network:** You'll need a local Ethereum blockchain for testing. Ganache is a popular option.
-    •   **Ganache:** [https://www.trufflesuite.com/ganache](https://www.trufflesuite.com/ganache)
-    •   **Hardhat Network:** (built-in to Hardhat)
-
-### Installation
-
-1.  **Clone the Repository:**
