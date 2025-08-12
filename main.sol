@@ -85,4 +85,16 @@ contract Election {
             }
         }
     }
+
+    function getWinner() public view returns(string memory) {
+        uint256 winnerIndex = 0;
+
+        for (uint256 i = 1; i < candidates.length; i++) { // Start from index 1, as 0 is already the initial winner
+            if(candidates[winnerIndex].votes < candidates[i].votes) {
+                winnerIndex = i;
+            }
+        }
+
+        return candidates[winnerIndex].name;
+    }
 }
