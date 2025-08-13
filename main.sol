@@ -70,7 +70,7 @@ contract Election {
         voters.push(msg.sender);
     }
 
-    function nominateCandidate(string memory _name, uint256 _age) public payable returns(string memory) {
+    function nominateCandidate(string memory _name, uint256 _age) public VoteIsNotEnd payable returns(string memory) {
         require(msg.value >= 10 ether, YouHaveToPay10Ethers());
 
         candidates.push(Candidate({name: _name, age: _age, votes: msg.value}));
